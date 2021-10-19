@@ -1,0 +1,31 @@
+{
+  "name": "skeleton",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "nodemon server.js",
+    "debug": "node --inspect server.js",
+    "dev:debug": "nodemon --inspect server.js",
+    "lint": "eslint src/. *.js --config .eslintrc.json",
+    "lint:fix": "eslint src/. *.js --config .eslintrc.json --fix",
+    "clean": "rm -rf node_modules && rm -f package-lock.json",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Nikita Bhangadiya",
+  "license": "ISC",
+  "dependencies": {
+    "compression": "^1.7.4",
+    "cookie-parser": "^1.4.5",
+    "cors": "^2.8.5",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "helmet": "^4.6.0",
+    "morgan": "^1.10.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.0.0",
+    "express-swagger-generator": "^1.1.17",
+    "nodemon": "^2.0.13"
+  }
+}
